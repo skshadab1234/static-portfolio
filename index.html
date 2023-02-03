@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Portfolio</title>
+      <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+      <link rel="stylesheet" href="https://tailwindcss.com/_next/static/css/115222e4120f36f5.css">
+
+   </head>
+   <body class="antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900">
+      <div class="mb-20 overflow-hidden sm:mb-32 md:mb-40">
+         <header class="relative">
+            <div class="px-4 sm:px-6 md:px-8">
+               <div class="absolute inset-0 bottom-10 bg-bottom bg-no-repeat bg-slate-50 dark:bg-[#0B1120] ">
+                  <div class="absolute inset-0 
+                              bg-grid-slate-900/[0.04] 
+                              bg-[bottom_1px_center] 
+                              dark:bg-grid-slate-400/[0.05] 
+                              dark:bg-bottom 
+                              dark:border-b 
+                              dark:border-slate-100/5"
+                     style="-webkit-mask-image: linear-gradient(transparent, black);"></div>
+               </div>
+               <div
+                  class="relative pt-6 lg:pt-8 flex items-center justify-between text-slate-700 font-semibold text-sm leading-6 dark:text-slate-200">
+                  <!--?xml version="1.0" standalone="no"?-->
+                  <svg viewBox="0 0 348 31" class=" w-auto h-5">
+                     <text x="120" y="25" class="dark:fill-white" text-anchor="middle" font-size="30">
+                        Portfolio
+                     </text>
+                  </svg>
+                  <div class="-my-1 ml-2 -mr-1 md:hidden">
+                     <button type="button" id="OpenButton_Menu"
+                            class="text-slate-500 w-8 h-8 
+                            flex items-center 
+                            justify-center 
+                            hover:text-slate-600 
+                            dark:text-slate-400 
+                            dark:hover:text-slate-300">
+                        <span
+                           class="sr-only">Navigation</span>
+                        <svg width="24" height="24" fill="none"
+                           aria-hidden="true">
+                           <path
+                              d="M12 6v.01M12 12v.01M12 18v.01M12 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"
+                              stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round"></path>
+                        </svg>
+                     </button>
+                    
+                  </div>
+                  <div class="hidden md:flex items-center">
+                     <nav>
+                        <ul class="flex items-center gap-x-8">
+                           <li><a class="hover:text-sky-500 dark:hover:text-sky-400" href="/">Home</a></li>
+                           <li><a href="#skills" class="hover:text-sky-500 dark:hover:text-sky-400">Skills</a></li>
+                           <li><a class="hover:text-sky-500 dark:hover:text-sky-400" href="#projects">Portfolio</a>
+                           </li>
+                           <li><a class="hover:text-sky-500 dark:hover:text-sky-400"
+                              href="#testimonials">Testimonials</a></li>
+                           <li><a class="hover:text-sky-500 dark:hover:text-sky-400" href="#contact">Contact</a>
+                           </li>
+                        </ul>
+                     </nav>
+                     <!-- Theme Navigation Start  -->
+                     <div class="flex items-center border-l border-slate-200 ml-6 pl-6 dark:border-slate-800">
+                        <button type="button" id="headlessui-listbox-button-16">
+                           <!-- Dark Mode  -->
+                           <span class="dark:hidden">
+                              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round" class="w-6 h-6">
+                                 <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                                    class="fill-sky-400/20 stroke-sky-500"></path>
+                                 <path
+                                    d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66 17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995 12.004h1.01M6 6l.835.836"
+                                    class="stroke-sky-500"></path>
+                              </svg>
+                           </span>
+                           <!-- Light Mode  -->
+                           <span class="hidden dark:inline">
+                              <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6">
+                                 <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M17.715 15.15A6.5 6.5 0 0 1 9 6.035C6.106 6.922 4 9.645 4 12.867c0 3.94 3.153 7.136 7.042 7.136 3.101 0 5.734-2.032 6.673-4.853Z"
+                                    class="fill-sky-400/20"></path>
+                                 <path
+                                    d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9 6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221 8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0 3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5 7.5 0 0 0 7.5 7.5v-2ZM9 9.5c0-1.079.31-2.082.845-2.93L8.153 5.5A7.47 7.47 0 0 0 7 9.5h2Zm-4 3.368C5 10.089 6.815 7.75 9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042 6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136 8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725 4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z"
+                                    class="fill-sky-500"></path>
+                                 <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0 0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0 2-2 1 1 0 0 1 1-1Z"
+                                    class="fill-sky-500"></path>
+                              </svg>
+                           </span>
+                        </button>
+                        <a href="https://github.com/skshadab1234" target="_blank"
+                           class="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">                        
+                           <svg viewBox="0 0 16 16" class="w-5 h-5" fill="currentColor"
+                              aria-hidden="true">
+                              <path
+                                 d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                              </path>
+                           </svg>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- HeroSection Start  -->
+            <div class="mx-auto max-w-container h-screen px-6 pt-4 sm:px-6 lg:flex lg:px-10">
+               <div
+                  class="relative z-20 mx-auto max-w-[40rem] pb-16 pt-20 lg:mx-0 lg:w-[40rem] lg:max-w-none lg:flex-none lg:pb-24 lg:pr-4 lg:mt-14">
+                  <p
+                     class="mt-4 text-3xl font-extrabold tracking-[-0.04em] text-black dark:text-gray-300 sm:text-5xl sm:leading-[3.5rem]">
+                     SHADAB KHAN, Here 👋
+                  </p>
+                  <div class="flex flex-wrap mt-4">
+                     <div class="flex items-center text-sm font-medium text-slate-500">
+                        <svg fill="none"
+                           xmlns="http://www.w3.org/2000/svg"
+                           class="h-8 w-8 flex-none stroke-current text-slate-400" stroke-width="1.5"
+                           stroke-linecap="round" stroke-linejoin="round">
+                           <ellipse cx="16" cy="16" rx="13" ry="5"></ellipse>
+                           <ellipse cx="16" cy="16" rx="13" ry="5" transform="rotate(60 16 16)"></ellipse>
+                           <ellipse rx="13" ry="5" transform="matrix(-.5 .86603 .86603 .5 16 16)"></ellipse>
+                           <circle cx="16" cy="16" r="2"></circle>
+                        </svg>
+                        <span class="ml-2.5">React</span>
+                     </div>
+                     <div class="flex items-center text-sm font-medium text-slate-500 ml-6">
+                        <svg fill="none"
+                           xmlns="http://www.w3.org/2000/svg"
+                           class="h-8 w-8 flex-none stroke-current text-slate-400" stroke-width="1.5"
+                           stroke-linecap="round" stroke-linejoin="round">
+                           <defs>
+                              <linearGradient id="next-icon-gradient-a" x1="15.125" y1="18.25" x2="24.25"
+                                 y2="27.375" gradientUnits="userSpaceOnUse">
+                                 <stop offset=".24" stop-color="currentColor"></stop>
+                                 <stop offset="1" stop-color="currentColor" stop-opacity="0"></stop>
+                              </linearGradient>
+                              <linearGradient id="next-icon-gradient-b" x1="20.5" y1="11.25" x2="20.5" y2="18.25"
+                                 gradientUnits="userSpaceOnUse">
+                                 <stop stop-color="currentColor"></stop>
+                                 <stop offset="1" stop-color="currentColor" stop-opacity="0"></stop>
+                              </linearGradient>
+                           </defs>
+                           <path
+                              d="M16.25 28.5c6.765 0 12.25-5.485 12.25-12.25S23.015 4 16.25 4 4 9.485 4 16.25 9.485 28.5 16.25 28.5Z">
+                           </path>
+                           <path d="M12 21.5V12l12.25 14.25" stroke="url(#next-icon-gradient-a)"></path>
+                           <path d="M21.25 12a.75.75 0 1 0-1.5 0v8.17l1.5 1.64V12Z"
+                              fill="url(#next-icon-gradient-b)" stroke-width="0"></path>
+                        </svg>
+                        <span class="ml-2.5">Next.js</span>
+                     </div>
+                  </div>
+                  <p class="mt-4 text-base leading-7 text-slate-600">I have honed my abilities to develop innovative
+                     solutions to complex problems. From Front-End, to Back-end Projects, I have demonstrated my
+                     ability to work efficiently and effectively in a team setting. Take a look at my work and let's
+                     connect to discuss potential opportunities
+                  </p>
+                  <div class="mt-8 flex gap-4 animate-pulse"><a href="#contact"
+                     class="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-slate-900 text-white hover:bg-slate-700"><span>Contact me
+                     <span aria-hidden="true" class="text-slate-400 sm:inline">→</span></span></a>
+                  </div>
+               </div>
+               <div class="relative z-10 hidden lg:block">
+                  <div class="mt-6 flex">
+                     <div class="relative -right-52 p-4 mt-14">
+                        <div class="overflow-hidden rounded shadow-xl">
+                           <img class="h-[400px] w-full" src="profile-update.png">
+                        </div>
+                        <div>
+                           <div
+                              class="absolute -left-4 -right-8 top-0 h-px bg-slate-900/[0.1] [mask-image:linear-gradient(to_right,transparent,white_4rem,white_calc(100%-4rem),transparent)]">
+                           </div>
+                           <div
+                              class="absolute right-0 -top-20 -bottom-12 w-px bg-slate-900/[0.1] [mask-image:linear-gradient(to_top,transparent,white_4rem,white_calc(100%-4rem),transparent)]">
+                           </div>
+                           <div
+                              class="absolute -left-4 -right-8 bottom-0 h-px bg-slate-900/[0.1] [mask-image:linear-gradient(to_right,transparent,white_4rem,white_calc(100%-4rem),transparent)]">
+                           </div>
+                           <div
+                              class="absolute top-[calc(100%-1px)] right-10 -mb-px flex h-8 items-start overflow-hidden">
+                              <div class="flex -mt-px h-[2px] w-80 -scale-x-100">
+                                 <div
+                                    class="w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]">
+                                 </div>
+                                 <div
+                                    class="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+
+         <!--Skills -->
+         <header class="py-20 px-4" id="skills">
+            <h1 class="mb-4 text-3xl sm:text-4xl text-center text-slate-900 font-extrabold dark:text-slate-200">
+               Proficiency
+            </h1>
+            <div class="container mx-auto px-4 py-10">
+               <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div
+                     class="bg-white rounded-xl shadow-xl ring-1 ring-slate-900/5 dark:bg-slate-800 dark:highlight-white/10 w-9/12 mx-auto">
+                     <div class="grid grid-cols-1 divide-y">
+                        <div>
+                           <h1 class="text-lg md:text-2xl text-center p-3 font-bold">Hard Skills</h1>
+                        </div>
+                        <div class="p-4">
+                           <div>&#183; Debugging</div>
+                           <div>&#183; Coding</div>
+                           <div>&#183; Technical Skills</div>
+                           <div>&#183; Computer Skills</div>
+                           <div>&#183; Management Skills</div>
+                           <div>&#183; Project Management Skills</div>
+                           <div>&#183; Marketing Skills</div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div
+                     class="bg-white rounded-xl shadow-xl ring-1 ring-slate-900/5 dark:bg-slate-800 dark:highlight-white/10 w-9/12 mx-auto">
+                     <div class="grid grid-cols-1 divide-y">
+                        <div>
+                           <h1 class="text-lg md:text-2xl text-center p-3 font-bold">Soft Skills</h1>
+                        </div>
+                        <div class="p-4">
+                           <div>&#183; Communication</div>
+                           <div>&#183; Leadership</div>
+                           <div>&#183; Problem Solving</div>
+                           <div>&#183; Adaptability</div>
+                           <div>&#183; Emotional Intelligence</div>
+                           <div>&#183; Collaboration</div>
+                           <div>&#183; Critical Thinking</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <!--Portfolio-->
+         <main id="projects" class="py-20  sm:mt-20 relative">
+            <img alt="" src="https://tailwindcss.com/_next/static/media/beams@75.2e4c33d3.jpg" width="2170"
+               height="1494" decoding="async" data-nimg="future"
+               class="hidden dark:sm:hidden sm:block absolute top-[-6.25rem] left-1/2 max-w-none w-[67.8125rem] ml-[-46.875rem] pointer-events-none"
+               style="color: transparent;">
+            <img alt=""
+               src="https://tailwindcss.com/_next/static/media/beams-index-dark@75.8f02ce8a.jpg" width="1318"
+               height="1190" decoding="async" data-nimg="future"
+               class="hidden dark:block absolute top-[-5rem] left-1/2 max-w-none w-[41.1875rem] ml-[-40rem] pointer-events-none"
+               style="color: transparent;">
+            <div class="relative max-w-3xl px-4 sm:px-6 lg:px-8 mx-auto sm:text-center">
+               <h1 class="text-sm leading-6 font-semibold text-sky-500">Showcase</h1>
+               <p
+                  class="mt-6 text-[2.5rem] leading-none sm:text-6xl tracking-tight font-bold text-slate-900 dark:text-white">
+                  Professional Portfolio of Shadab Khan
+               </p>
+               <p class="mt-4 text-lg text-slate-600 dark:text-slate-400">the portfolio includes a showcase of Shadab
+                  Khan best work, including samples of writing, design, and other projects, demonstrating his creative
+                  abilities and the range of his skills. With its dynamic and interactive format, this portfolio
+                  offers a unique and engaging representation of Shadab Khan professional journey, highlighting his
+                  achievements, skills, and expertise..
+               </p>
+            </div>
+            <ul
+               class="grid max-w-[26rem] sm:max-w-[52.5rem] mt-16 sm:mt-20 md:mt-32 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-auto gap-6 lg:gap-y-8 xl:gap-x-8 lg:max-w-7xl px-4 sm:px-6 lg:px-8">
+               <li
+                  class="group relative rounded-3xl bg-slate-50 p-6 dark:bg-slate-800/80 dark:highlight-white/5 hover:bg-slate-100 dark:hover:bg-slate-700/50">
+                  <div
+                     class="aspect-[672/494] relative rounded-md transform overflow-hidden shadow-[0_2px_8px_rgba(15,23,42,0.08)] bg-slate-200 dark:bg-slate-700">
+                     <img alt=""
+                        src="https://raw.githubusercontent.com/skshadab1234/Chatapp-WebScokets-/master/media/chatScreen.PNG"
+                        width="672" height="494" decoding="async" data-nimg="future"
+                        class="absolute inset-0 w-full h-full" style="color: transparent;">
+                  </div>
+                  <div class="flex flex-wrap items-center mt-6">
+                     <h2
+                        class="text-sm leading-6 text-slate-900 dark:text-white font-semibold group-hover:text-sky-500 dark:group-hover:text-sky-400">
+                        <a href="#"><span class="absolute inset-0 rounded-3xl"></span>Chitchat
+                        Bot</a>
+                     </h2>
+                     <svg class="w-6 h-6 flex-none opacity-0 group-hover:opacity-100" viewBox="0 0 24 24"
+                        fill="none">
+                        <path d="M9.75 15.25L15.25 9.75M15.25 9.75H10.85M15.25 9.75V14.15" stroke="#0EA5E9"
+                           stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                     </svg>
+                     <p class="w-full flex-none text-[0.8125rem] leading-6 text-slate-500 dark:text-slate-400">
+                        HTML, CSS, PHP
+                     </p>
+                  </div>
+               </li>
+               <li
+                  class="group relative rounded-3xl bg-slate-50 p-6 dark:bg-slate-800/80 dark:highlight-white/5 hover:bg-slate-100 dark:hover:bg-slate-700/50">
+                  <div
+                     class="aspect-[672/494] relative rounded-md transform overflow-hidden shadow-[0_2px_8px_rgba(15,23,42,0.08)] bg-slate-200 dark:bg-slate-700">
+                     <img alt="" src="https://modernportfolio.vercel.app/images/crypto-tracker.PNG" width="672"
+                        height="494" decoding="async" data-nimg="future" class="absolute inset-0 w-full h-full"
+                        style="color: transparent;">
+                  </div>
+                  <div class="flex flex-wrap items-center mt-6">
+                     <h2
+                        class="text-sm leading-6 text-slate-900 dark:text-white font-semibold group-hover:text-sky-500 dark:group-hover:text-sky-400">
+                        <a href="#"><span class="absolute inset-0 rounded-3xl"></span>Crypto Tracker</a>
+                     </h2>
+                     <svg class="w-6 h-6 flex-none opacity-0 group-hover:opacity-100" viewBox="0 0 24 24"
+                        fill="none">
+                        <path d="M9.75 15.25L15.25 9.75M15.25 9.75H10.85M15.25 9.75V14.15" stroke="#0EA5E9"
+                           stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                     </svg>
+                     <p class="w-full flex-none text-[0.8125rem] leading-6 text-slate-500 dark:text-slate-400">
+                        Reactjs
+                     </p>
+                  </div>
+               </li>
+               <li
+                  class="group relative rounded-3xl bg-slate-50 p-6 dark:bg-slate-800/80 dark:highlight-white/5 hover:bg-slate-100 dark:hover:bg-slate-700/50">
+                  <div
+                     class="aspect-[672/494] relative rounded-md transform overflow-hidden shadow-[0_2px_8px_rgba(15,23,42,0.08)] bg-slate-200 dark:bg-slate-700">
+                     <img alt="" src="https://modernportfolio.vercel.app/images/3.PNG" width="672" height="494"
+                        decoding="async" data-nimg="future" class="absolute inset-0 w-full h-full"
+                        style="color: transparent;">
+                  </div>
+                  <div class="flex flex-wrap items-center mt-6">
+                     <h2
+                        class="text-sm leading-6 text-slate-900 dark:text-white font-semibold group-hover:text-sky-500 dark:group-hover:text-sky-400">
+                        <a href="#"><span class="absolute inset-0 rounded-3xl"></span>Tinder Clone</a>
+                     </h2>
+                     <svg class="w-6 h-6 flex-none opacity-0 group-hover:opacity-100" viewBox="0 0 24 24"
+                        fill="none">
+                        <path d="M9.75 15.25L15.25 9.75M15.25 9.75H10.85M15.25 9.75V14.15" stroke="#0EA5E9"
+                           stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                     </svg>
+                     <p class="w-full flex-none text-[0.8125rem] leading-6 text-slate-500 dark:text-slate-400">
+                        Reactjs
+                     </p>
+                  </div>
+               </li>
+               <li
+                  class="group relative rounded-3xl bg-slate-50 p-6 dark:bg-slate-800/80 dark:highlight-white/5 hover:bg-slate-100 dark:hover:bg-slate-700/50">
+                  <div
+                     class="aspect-[672/494] relative rounded-md transform overflow-hidden shadow-[0_2px_8px_rgba(15,23,42,0.08)] bg-slate-200 dark:bg-slate-700">
+                     <img alt="" src="https://modernportfolio.vercel.app/images/7.PNG" width="672" height="494"
+                        decoding="async" data-nimg="future" class="absolute inset-0 w-full h-full"
+                        style="color: transparent;">
+                  </div>
+                  <div class="flex flex-wrap items-center mt-6">
+                     <h2
+                        class="text-sm leading-6 text-slate-900 dark:text-white font-semibold group-hover:text-sky-500 dark:group-hover:text-sky-400">
+                        <a href="#"><span class="absolute inset-0 rounded-3xl"></span>Rock Paper Scissor Game Using
+                        HTML, CSS & JS</a>
+                     </h2>
+                     <svg class="w-6 h-6 flex-none opacity-0 group-hover:opacity-100" viewBox="0 0 24 24"
+                        fill="none">
+                        <path d="M9.75 15.25L15.25 9.75M15.25 9.75H10.85M15.25 9.75V14.15" stroke="#0EA5E9"
+                           stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                     </svg>
+                     <p class="w-full flex-none text-[0.8125rem] leading-6 text-slate-500 dark:text-slate-400">HTML,
+                        CSS & JS
+                     </p>
+                  </div>
+               </li>
+            </ul>
+         </main>
+
+         <!-- Testimonials  -->
+         <section id="testimonials" class="text-center px-8 py-20 sm:mt-32 md:mt-40">
+            <h2 class="text-slate-900 text-4xl tracking-tight font-extrabold sm:text-5xl dark:text-white">“Customer
+               Testimonials”
+            </h2>
+            <figure>
+               <blockquote>
+                  <p class="mt-6 max-w-3xl mx-auto text-lg">I’ve written Lorem Ipsum is simply dummy text of the
+                     printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+                     since the 1500s
+                  </p>
+               </blockquote>
+               <figcaption class="mt-6 flex items-center justify-center space-x-4 text-left">
+                  <img src="prof.jpg" alt=""
+                     class="w-14 h-14 rounded-full" loading="lazy" decoding="async">
+                  <div>
+                     <div class="text-slate-900 font-semibold dark:text-white">Shadab Khan</div>
+                     <div class="mt-0.5 text-sm leading-6">Full Stack Web Developer</div>
+                  </div>
+               </figcaption>
+            </figure>
+
+            <!-- User Comments  -->
+            <div class="grid grid-cols-1 gap-6 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3 py-16">
+               <ul class="space-y-8">
+                  <li class="text-sm leading-6">
+                     <figure
+                        class="relative flex flex-col-reverse bg-slate-50 rounded-lg p-6 dark:bg-slate-800 dark:highlight-white/5">
+                        <blockquote class="mt-6 text-slate-700 dark:text-slate-300">
+                           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam sapiente sint quas sunt dignissimos molestiae fugiat alias praesentium, quibusdam, vel dolorem?</p>
+                        </blockquote>
+                        <figcaption class="flex items-center space-x-4">
+                           <img
+                              src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg" alt=""
+                              class="flex-none w-14 h-14 rounded-full object-cover" loading="lazy"
+                              decoding="async">
+                           <div class="flex-auto">
+                              <div class="text-base text-slate-900 font-semibold dark:text-slate-300"><a
+                                 href="" tabindex="0"><span class="absolute inset-0"></span>Sahil Mirza</a></div>
+                              <div class="mt-0.5">Remix &amp; React Training</div>
+                           </div>
+                        </figcaption>
+                     </figure>
+                  </li>
+                  <li class="text-sm leading-6">
+                     <figure
+                        class="relative flex flex-col-reverse bg-slate-50 rounded-lg p-6 dark:bg-slate-800 dark:highlight-white/5">
+                        <blockquote class="mt-6 text-slate-700 dark:text-slate-300">
+                           I had a fantastic experience working with Shadab Khan. Their technical expertise and attention to detail really impressed me. The end result was exactly what I was looking for and I highly recommend them to anyone in need of a top-notch web developer.
+                        </blockquote>
+                        <figcaption class="flex items-center space-x-4">
+                           <img
+                              src="https://tailwindcss.com/_next/static/media/0xholman.6d2ef412.jpg" alt=""
+                              class="flex-none w-14 h-14 rounded-full object-cover" loading="lazy"
+                              decoding="async">
+                           <div class="flex-auto">
+                              <div class="text-base text-slate-900 font-semibold dark:text-slate-300"><a href="" tabindex="0"><span class="absolute inset-0"></span>Musab Sable</a></div>
+                              <div class="mt-0.5">Web Developer</div>
+                           </div>
+                        </figcaption>
+                     </figure>
+                  </li>
+                  <li class="text-sm leading-6">
+                     <figure
+                        class="relative flex flex-col-reverse bg-slate-50 rounded-lg p-6 dark:bg-slate-800 dark:highlight-white/5">
+                        <blockquote class="mt-6 text-slate-700 dark:text-slate-300">
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur in eaque quisquam nisi distinctio? Amet facere tempora reprehenderit nesciunt consequuntur enim facilis!</p>
+                        </blockquote>
+                        <figcaption class="flex items-center space-x-4">
+                           <img
+                              src="https://tailwindcss.com/_next/static/media/jilsonthomas.1e3784f8.jpg" alt=""
+                              class="flex-none w-14 h-14 rounded-full object-cover" loading="lazy"
+                              decoding="async">
+                           <div class="flex-auto">
+                              <div class="text-base text-slate-900 font-semibold dark:text-slate-300"><a
+                                 href=""
+                                 tabindex="0"><span class="absolute inset-0"></span>Jilson Thomas</a></div>
+                              <div class="mt-0.5">UI Designer/Developer</div>
+                           </div>
+                        </figcaption>
+                     </figure>
+                  </li>
+                  <li class="text-sm leading-6">
+                     <figure
+                        class="relative flex flex-col-reverse bg-slate-50 rounded-lg p-6 dark:bg-slate-800 dark:highlight-white/5">
+                        <blockquote class="mt-6 text-slate-700 dark:text-slate-300">
+                           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta ea expedita cum.
+                           </p>
+                        </blockquote>
+                        <figcaption class="flex items-center space-x-4">
+                           <img
+                              src="https://tailwindcss.com/_next/static/media/jakeryansmith.aa2949a1.jpg" alt=""
+                              class="flex-none w-14 h-14 rounded-full object-cover" loading="lazy"
+                              decoding="async">
+                           <div class="flex-auto">
+                              <div class="text-base text-slate-900 font-semibold dark:text-slate-300"><a
+                                 href=""
+                                 tabindex="0"><span class="absolute inset-0"></span>Jake Ryan Smith</a></div>
+                              <div class="mt-0.5">Full-Stack Developer</div>
+                           </div>
+                        </figcaption>
+                     </figure>
+                  </li>
+               </ul>
+               <ul class="space-y-8 hidden sm:block">
+                  <li class="text-sm leading-6">
+                     <figure
+                        class="relative flex flex-col-reverse bg-slate-50 rounded-lg p-6 dark:bg-slate-800 dark:highlight-white/5">
+                        <blockquote class="mt-6 text-slate-700 dark:text-slate-300">
+                           <p>Have been working with CSS for over ten years and Tailwind just makes my life easier.
+                              It is still CSS and you use flex, grid, etc. but just quicker to write and maintain.
+                           </p>
+                        </blockquote>
+                        <figcaption class="flex items-center space-x-4">
+                           <img
+                              src="https://tailwindcss.com/_next/static/media/debbie-obrien.69d3104d.jpg" alt=""
+                              class="flex-none w-14 h-14 rounded-full object-cover" loading="lazy"
+                              decoding="async">
+                           <div class="flex-auto">
+                              <div class="text-base text-slate-900 font-semibold dark:text-slate-300"><a
+                                 href=""
+                                 tabindex="0"><span class="absolute inset-0"></span>Debbie O'Brien</a></div>
+                              <div class="mt-0.5">Senior Program Manager at Microsoft</div>
+                           </div>
+                        </figcaption>
+                     </figure>
+                  </li>
+                  <li class="text-sm leading-6">
+                     <figure
+                        class="relative flex flex-col-reverse bg-slate-50 rounded-lg p-6 dark:bg-slate-800 dark:highlight-white/5">
+                        <blockquote class="mt-6 text-slate-700 dark:text-slate-300">
+                           <p>Professional, efficient, and great communication.</p>
+                        </blockquote>
+                        <figcaption class="flex items-center space-x-4">
+                           <img
+                              src="https://tailwindcss.com/_next/static/media/frontendben.7c4b54bd.jpg" alt=""
+                              class="flex-none w-14 h-14 rounded-full object-cover" loading="lazy"
+                              decoding="async">
+                           <div class="flex-auto">
+                              <div class="text-base text-slate-900 font-semibold dark:text-slate-300"><a
+                                 href=""
+                                 tabindex="0"><span class="absolute inset-0"></span>Ben Furfie</a></div>
+                              <div class="mt-0.5">Developer</div>
+                           </div>
+                        </figcaption>
+                     </figure>
+                  </li>
+                  <li class="text-sm leading-6">
+                     <figure
+                        class="relative flex flex-col-reverse bg-slate-50 rounded-lg p-6 dark:bg-slate-800 dark:highlight-white/5">
+                        <blockquote class="mt-6 text-slate-700 dark:text-slate-300">
+                           <p>The website is beautiful, thanks for your hard work!.</p>
+                        </blockquote>
+                        <figcaption class="flex items-center space-x-4">
+                           <img
+                              src="https://tailwindcss.com/_next/static/media/didiercatz.5a884729.jpg" alt=""
+                              class="flex-none w-14 h-14 rounded-full object-cover" loading="lazy"
+                              decoding="async">
+                           <div class="flex-auto">
+                              <div class="text-base text-slate-900 font-semibold dark:text-slate-300"><a
+                                 href=""
+                                 tabindex="0"><span class="absolute inset-0"></span>Didier Catz</a></div>
+                              <div class="mt-0.5">Co-Founder @StyptApp</div>
+                           </div>
+                        </figcaption>
+                     </figure>
+                  </li>
+                  <li class="text-sm leading-6">
+                     <figure
+                        class="relative flex flex-col-reverse bg-slate-50 rounded-lg p-6 dark:bg-slate-800 dark:highlight-white/5">
+                        <blockquote class="mt-6 text-slate-700 dark:text-slate-300">
+                           <p>Top-notch skills and great attention to detail.</p>
+                        </blockquote>
+                        <figcaption class="flex items-center space-x-4">
+                           <img
+                              src="https://tailwindcss.com/_next/static/media/frontstuff_io.b46365eb.jpg" alt=""
+                              class="flex-none w-14 h-14 rounded-full object-cover" loading="lazy"
+                              decoding="async">
+                           <div class="flex-auto">
+                              <div class="text-base text-slate-900 font-semibold dark:text-slate-300"><a
+                                 href=""
+                                 tabindex="0"><span class="absolute inset-0"></span>Sarah Dayan</a></div>
+                              <div class="mt-0.5">Staff Software Engineer @Algolia</div>
+                           </div>
+                        </figcaption>
+                     </figure>
+                  </li>
+               </ul>
+               <ul class="space-y-8 hidden lg:block">
+                  <li class="text-sm leading-6">
+                     <figure
+                        class="relative flex flex-col-reverse bg-slate-50 rounded-lg p-6 dark:bg-slate-800 dark:highlight-white/5">
+                        <blockquote class="mt-6 text-slate-700 dark:text-slate-300">
+                           <p>The website is exactly what I wanted, great job!</p>
+                        </blockquote>
+                        <figcaption class="flex items-center space-x-4">
+                           <img
+                              src="https://tailwindcss.com/_next/static/media/kentcdodds.90894efe.jpg" alt=""
+                              class="flex-none w-14 h-14 rounded-full object-cover" loading="lazy"
+                              decoding="async">
+                           <div class="flex-auto">
+                              <div class="text-base text-slate-900 font-semibold dark:text-slate-300"><a
+                                 href=""
+                                 tabindex="0"><span class="absolute inset-0"></span>Kent C. Dodds</a></div>
+                              <div class="mt-0.5">Developer and Educator</div>
+                           </div>
+                        </figcaption>
+                     </figure>
+                  </li>
+                  <li class="text-sm leading-6">
+                     <figure
+                        class="relative flex flex-col-reverse bg-slate-50 rounded-lg p-6 dark:bg-slate-800 dark:highlight-white/5">
+                        <blockquote class="mt-6 text-slate-700 dark:text-slate-300">
+                           <p>Professional, efficient, and great communication.</p>
+                        </blockquote>
+                        <figcaption class="flex items-center space-x-4">
+                           <img
+                              src="https://tailwindcss.com/_next/static/media/shrutibalasa.8c3514ba.jpg" alt=""
+                              class="flex-none w-14 h-14 rounded-full object-cover" loading="lazy"
+                              decoding="async">
+                           <div class="flex-auto">
+                              <div class="text-base text-slate-900 font-semibold dark:text-slate-300"><a
+                                 href="n
+                                 class="absolute inset-0"></span>Shruti Balasa</a></div>
+                              <div class="mt-0.5">Full Stack Web Developer &amp; Tech Educator</div>
+                           </div>
+                        </figcaption>
+                     </figure>
+                  </li>
+                  <li class="text-sm leading-6">
+                     <figure
+                        class="relative flex flex-col-reverse bg-slate-50 rounded-lg p-6 dark:bg-slate-800 dark:highlight-white/5">
+                        <blockquote class="mt-6 text-slate-700 dark:text-slate-300">
+                           <p>Best web developer I've ever worked with.</p>
+                        </blockquote>
+                        <figcaption class="flex items-center space-x-4">
+                           <img
+                              src="https://tailwindcss.com/_next/static/media/levelsio.a3935ad1.jpg" alt=""
+                              class="flex-none w-14 h-14 rounded-full object-cover" loading="lazy"
+                              decoding="async">
+                           <div class="flex-auto">
+                              <div class="text-base text-slate-900 font-semibold dark:text-slate-300"><a
+                                 href=""
+                                 tabindex="0"><span class="absolute inset-0"></span>Pieter Levels</a></div>
+                              <div class="mt-0.5">Maker</div>
+                           </div>
+                        </figcaption>
+                     </figure>
+                  </li>
+                  <li class="text-sm leading-6">
+                     <figure
+                        class="relative flex flex-col-reverse bg-slate-50 rounded-lg p-6 dark:bg-slate-800 dark:highlight-white/5">
+                        <blockquote class="mt-6 text-slate-700 dark:text-slate-300">
+                           <p>Excellent work, highly recommend!</p>
+                        </blockquote>
+                        <figcaption class="flex items-center space-x-4">
+                           <img
+                              src="https://tailwindcss.com/_next/static/media/gregsvn.71ec2ec2.jpg" alt=""
+                              class="flex-none w-14 h-14 rounded-full object-cover" loading="lazy"
+                              decoding="async">
+                           <div class="flex-auto">
+                              <div class="text-base text-slate-900 font-semibold dark:text-slate-300"><a
+                                 href=""
+                                 tabindex="0"><span class="absolute inset-0"></span>Greg Sullivan</a></div>
+                              <div class="mt-0.5">WordPress Developer</div>
+                           </div>
+                        </figcaption>
+                     </figure>
+                  </li>
+               </ul>
+            </div>
+         </section>
+         <!-- Contact -->
+         <section id="contact" class="px-8 py-20 text-gray-600 body-font relative">
+            <h2 class="text-slate-900 text-4xl tracking-tight font-extrabold sm:text-5xl dark:text-white lg:text-center">Have a question or want to get in touch?</h2>
+            <figure>
+            <blockquote>
+               <p class="mt-6 max-w-3xl mx-auto text-lg lg:text-center">Fill out the form below and we'll get back to you as soon as possible.</p>
+            </blockquote>
+            <div class="container px-5 py-20 mx-auto flex sm:flex-nowrap flex-wrap">
+               <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+                  <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609886412!2d72.74109938345369!3d19.08219783914889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1675339421660!5m2!1sen!2sin" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+                  <div class="bg-white dark:bg-slate-800 relative flex flex-wrap py-6 rounded shadow-md">
+                     <div class="lg:w-1/2 px-6">
+                        <h2 class="title-font font-semibold dark:text-slate-100 text-gray-900 tracking-widest text-xs">ADDRESS</h2>
+                        <p class="mt-1 dark:text-slate-200">Unknown, Mumbai</p>
+                     </div>
+                     <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+                        <h2 class="title-font font-semibold text-gray-900 dark:text-slate-100 tracking-widest text-xs">EMAIL</h2>
+                        <a class="text-purple-500 leading-relaxed">example@email.com</a>
+                        <h2 class="title-font font-semibold text-gray-900 dark:text-slate-100 tracking-widest text-xs mt-4">PHONE</h2>
+                        <p class="leading-relaxed dark:text-slate-200">123-456-7890</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="lg:w-1/3 md:w-1/2 bg-white dark:bg-slate-800 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 p-3 rounded-md">
+                  <div class="relative mb-4">
+                     <label for="name" class="leading-7 text-sm  dark:text-slate-300  text-gray-600">Name</label>
+                     <input type="text" id="name" name="name" class="w-full bg-white dark:bg-slate-600 rounded border border-gray-300 dark:border-slate-800  focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none dark:text-white text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                  </div>
+                  <div class="relative mb-4">
+                     <label for="email" class="leading-7 text-sm  dark:text-slate-300 text-gray-600">Email</label>
+                     <input type="email" id="email" name="email" class="w-full bg-white  dark:bg-slate-600 rounded border border-gray-300  dark:border-slate-800 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none  dark:text-white text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                  </div>
+                  <div class="relative mb-4">
+                     <label for="message" class="leading-7 text-sm  dark:text-slate-300 text-gray-600">Message</label>
+                     <textarea id="message" name="message" class="w-full bg-white rounded dark:bg-slate-600 border border-gray-300  dark:border-slate-800 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 h-32 text-base outline-none dark:text-white text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                  </div>
+                  <button class="text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg">Button</button>
+                  <p class="text-xs text-gray-500 mt-3 dark:text-slate-300 ">Note: Please allow us 24-48 hours to respond to your inquiry. We appreciate your patience and look forward to assisting you</p>
+               </div>
+            </div>
+         </section>
+      </div>
+      <!-- Footer -->
+      <footer class="text-gray-600">
+         <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center dark:text-gray-300 text-gray-900">
+            <span class="ml-3 text-xl">Portfolio<span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 —
+               <a href="" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">Shadab Khan</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+               <a class="text-gray-500">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                     <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+               </a>
+               <a class="ml-3 text-gray-500">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                     <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                  </svg>
+               </a>
+               <a class="ml-3 text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                     <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                     <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                  </svg>
+               </a>
+               <a class="ml-3 text-gray-500">
+                  <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                     <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                     <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                  </svg>
+               </a>
+            </span>
+         </div>
+      </footer>
+
+      <!-- MOBILE SCREEN MENU  -->
+      <div class="fixed z-50 inset-0 lg:hidden hidden" id="headlessui-dialog-24" role="dialog" aria-modal="true"
+         data-headlessui-state="open">
+         <div class="fixed inset-0 bg-black/20 backdrop-blur-sm dark:bg-slate-900/80" id="headlessui-dialog-overlay-29"
+            aria-hidden="true" data-headlessui-state="open"></div>
+         <div
+            class="fixed top-4 right-4 w-full max-w-xs bg-white rounded-lg shadow-lg p-6 text-base font-semibold text-slate-900 dark:bg-slate-800 dark:text-slate-400 dark:highlight-white/5">
+            <button type="button" id="close_navigation"
+               class="absolute top-5 right-5 w-8 h-8 flex items-center justify-center text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
+               tabindex="0">
+               <span class="sr-only">Close navigation</span>
+               <svg viewBox="0 0 10 10"
+                  class="w-2.5 h-2.5 overflow-visible" aria-hidden="true">
+                  <path d="M0 0L10 10M10 0L0 10" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round"></path>
+               </svg>
+            </button>
+            <ul class="space-y-6">
+               <li><a class="hover:text-sky-500 dark:hover:text-sky-400" href="/">Home</a></li>
+               <li><a href="#skills" class="hover:text-sky-500 dark:hover:text-sky-400">Skills</a></li>
+               <li><a class="hover:text-sky-500 dark:hover:text-sky-400" href="#projects">Portfolio</a></li>
+               <li><a class="hover:text-sky-500 dark:hover:text-sky-400" href="#testimonials">Testimonials</a></li>
+               <li><a class="hover:text-sky-500 dark:hover:text-sky-400" href="#contact">Contact</a></li>
+               <li><a href="https://github.com/skshadab1234"
+                  class="hover:text-sky-500 dark:hover:text-sky-400">GitHub</a></li>
+            </ul>
+          
+         </div>
+      </div>
+      <script src="script.js"></script>
+   </body>
+</html>
